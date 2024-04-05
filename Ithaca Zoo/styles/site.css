@@ -1,0 +1,458 @@
+body {
+  background-color: #212426;
+  font-family: sans-serif;
+  margin-top: 0;
+}
+
+main {
+  background-color: white;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 35px;
+}
+
+img {
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+  color: #cc9900;
+  padding-top: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-variant: small-caps;
+  color: #008484;
+}
+
+h4 {
+  color: #85754e;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+li {
+  list-style-type: square;
+}
+
+figcaption {
+  font-variant: small-caps;
+  color: #008484;
+}
+
+/* HEADER START */
+
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-variant: small-caps;
+  text-decoration: none;
+  font-size: 36px;
+  padding-top: 5px;
+}
+
+header {
+  background-image: url("../images/blurred-sprout.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px 10px black;
+  filter: grayscale(10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 35px 0;
+}
+
+header span {
+  color: white;
+}
+
+nav {
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-variant: all-small-caps;
+  margin-left: 10px;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+.top a {
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  margin: 10px 20px;
+  padding: 0 0 2px 0;
+}
+
+.top a:hover {
+  border-bottom: 1px solid white;
+}
+
+.top img {
+  width: 90px;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0 0 5px #cc9900, 0 0 5px #cc9900;
+  font-size: 42px;
+  font-variant: all-small-caps;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* HEADER END */
+
+/* HOME PAGE START */
+
+#featured_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.featured_link {
+  margin: 0 15px;
+}
+
+.featured_link figure, .featured_link p {
+  margin: 0;
+  width: 200px;
+}
+
+.featured_link img {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.featured_link figcaption {
+  font-variant: all-small-caps;
+  letter-spacing: 2px;
+  color: #008484;
+  margin: 0 0 10px 0;
+}
+
+.featured_link a {
+  text-decoration: none;
+}
+
+#visitor_info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#visitor_info section ul, #visitor_info table {
+  padding: 10px 20px;
+  border-spacing: 0;
+}
+
+#visitor_info table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+#visitor_info table th {
+  font-variant: all-small-caps;
+  letter-spacing: 2px;
+  color: #015b5b;
+}
+
+#visitor_info table td {
+  letter-spacing: 1px;
+}
+
+#visitor_info table th, #visitor_info table td {
+  outline: solid #008484;
+  margin: 0;
+  padding: 5px;
+}
+
+.highlight {
+  background-color: #a7e5e5;
+}
+
+#visitor_info figure img {
+  width: 275px;
+  margin: 0 auto;
+}
+
+#visitor_info form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  padding: 10px;
+  padding-top: 0;
+}
+
+h4:first-child {
+  margin-top: 0;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.radio_label {
+  margin-top: 15px;
+}
+
+.contact {
+  justify-content: flex-end;
+}
+
+.contact input {
+  margin-left: 10px;
+}
+
+.age {
+  color: #85754e;
+  font-size: 12px;
+  display: block;
+}
+
+#child_tix, #adult_tix {
+  width: 35px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+#submit {
+  align-self: flex-end;
+  margin-right: 0;
+}
+
+.error_message {
+  max-width: 250px;
+  align-self: flex-end;
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+/* HOMEPAGE END */
+
+/* NEWS ALIGNMENT START */
+
+.news-content {
+  display: flex;
+}
+
+.news-main {
+  flex-basis: 65%;
+  margin: 0 20px 0 30px;
+}
+
+.news figure {
+  margin: 0;
+  padding: 0;
+}
+
+.news figure img {
+  width: 100%;
+}
+
+.news-content aside {
+  flex-basis: 30%;
+  height: 100%;
+  border: solid;
+  margin: 0 30px;
+  padding: 5px 15px;
+}
+
+/* NEWS ALIGNMENT END */
+
+/* GALLERY START */
+
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+}
+
+.gallery {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  color: white;
+  background-color: #008484;
+  font-variant: all-small-caps;
+  letter-spacing: 2px;
+  width: 120px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #008484;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+button:hover {
+  color: #008484;
+  background-color: white;
+  border: 2px solid #008484;
+}
+
+/* GALLERY END */
+
+/* RESOURCES START */
+
+#collab {
+  background-color: #dbd3cb;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #008484;
+  margin: 5px 0;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+.float_right {
+  float: right;
+  margin-top: 0;
+}
+
+.float_left {
+  float: left;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.float_right img {
+  width: 220px;
+}
+
+.float_left img {
+  width: 220px;
+}
+
+/* RESOURCES END */
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #706c65;
+  margin: 15px 0;
+  clear: left;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 110%;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  .logo-nav {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    font-size: 120%;
+    margin-top: 0;
+  }
+
+  .top a {
+    margin: 3px;
+  }
+
+  h1 {
+    margin: 5px 0 0 0;
+  }
+
+  #featured_links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured_link {
+    margin: 10px auto;
+  }
+
+  #visitor_info {
+    flex-direction: column;
+  }
+
+  table, tbody, tr {
+    width: 80%;
+  }
+
+  #visitor_info table th {
+    outline: none;
+  }
+
+  table tr {
+    display: table;
+    outline: solid #008484;
+    width: 100%;
+  }
+
+  table td {
+    display: table-row;
+    text-align: center;
+  }
+
+  #visitor_info {
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-content {
+    flex-direction: column;
+  }
+}

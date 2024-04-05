@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home | Ithaca Zoo</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/schedule.js"></script>
+  <script src="scripts/calculator.js"></script>
+  <script src="scripts/validation.js"></script>
+  <script src="scripts/form_logic.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <a class="top" href="index.html"><img alt="Ithaca Zoo Logo" src="images/zoo-logo.png"/></a>
+        <a href="index.html"><span class="top">The Ithaca Zoo</span></a>
+      </div>
+      <nav>
+        <ul>
+          <li class="top"><a href="index.html">Home</a></li>
+          <li class="top"><a href="news.html">Latest News</a></li>
+          <li class="top"><a href="animals.html">Our Animals</a></li>
+          <li class="top"><a href="education.html">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Welcome to the Ithaca Zoo</h1>
+  </header>
+
+  <main>
+    <article>
+      <p>
+        We are a non-profit, home to over 200 animals. We are committed to promoting the advancement of animal care and conservation. As you explore the different habitats and animal species, we hope you will learn more about our mission and join us in goal of ending animal extinction and helping the Earth.
+      </p>
+    </article>
+    <hr/>
+
+    <h2>Explore Your Zoo</h2>
+
+    <div id="featured_links">
+      <div class="featured_link">
+        <figure>
+          <a href="news.html#tigger"><img alt="Tigger, the Tiger" src="images/tiger-square.jpg"/></a>
+          <figcaption><a href="news.html#tigger">Hear the Latest News?</a></figcaption>
+        </figure>
+        <p>Meet Tigger, the Tiger, this month's spotlight animal.</p>
+      </div>
+      <div class="featured_link">
+        <figure>
+          <a href="animals.html#latest"><img alt="Wei Wei, the baby panda" src="images/panda-square.jpg"/></a>
+          <figcaption><a href="animals.html#latest">Who's that New Animal?</a></figcaption>
+        </figure>
+        <p>Check out the newest additions to the Ithaca Zoo Family.</p>
+      </div>
+      <div class="featured_link">
+        <figure>
+          <a href="education.html#collab"><img alt="People Walking" src="images/walking.jpg"/></a>
+          <figcaption><a href="education.html#collab">Education through Exploration!</a></figcaption>
+        </figure>
+        <p>How can I make my zoo experience better? Stop by for more information.</p>
+      </div>
+    </div>
+
+    <article>
+      <h2>Visitor Info</h2>
+      <p>
+        We are located at 123 Imagination Street in Ithaca, NY.
+        We are open every day of the year, including holidays, from 8AM - 8PM.
+        We have a free parking lot located at the front of the park. Please call ahead if you have a bus or oversized vehicle (vans not including mini-vans, trailers, etc.)
+      </p>
+
+      <p>
+        For information about our latest attractions, check out our <a href="news.html">news</a> page.
+      </p>
+
+      <div id="visitor_info">
+        <section>
+          <h3>Pre-Order Tickets for Pick Up</h3>
+
+          <form id="tix_form" method="post" action="index.html" novalidate>
+
+            <h4>Avoid Lines at the Door!</h4>
+            <p>
+              Pre-order and your tickets will be waiting for you at the Ticket Pick-Up Booth at the entrance of the Zoo.
+            </p>
+
+            <div class="error_message hidden" id="tix_error">
+              *You may only reserve a maximum of 10 tickets each.
+              Please call us at 54X-XXX-XXXX to make a reservation for a large group.
+            </div>
+
+            <div class="input">
+              <div class="tix">
+                <label class="label_info" for="adult_tix">Adult</label><br/>
+                <span class="age">(12 & up)</span>
+              </div>
+              <span>$40 × <input type="number" id="adult_tix" name="adult_tix" value="0" min="0" max="10"/></span>
+            </div>
+
+            <div class="input">
+              <div class="tix">
+                <label class="label_info" for="child_tix">Children</label><br/>
+                <span class="age">(3 - 11)</span>
+              </div>
+              <span >$25 × <input type="number" id="child_tix" name="child_tix" value="0" min="0" max="10"/></span>
+            </div>
+
+            <div class="input">
+              <div class="tix">
+                <span class="label_info">Newborn/Toddlers</span><br/>
+                <span class="age">(3 & under)</span>
+              </div>
+              <span class="small">FREE</span>
+            </div>
+
+            <div class="input">
+              <span>Estimated Tax: </span>
+              <span id="tax">$0.00</span>
+            </div>
+
+            <div class="input">
+              <span>Total Estimated Cost: </span>
+              <span id="cost">$0.00</span>
+            </div>
+
+            <h4>Contact for Reservation</h4>
+            <p>
+              Please provide the name and a method to contact the individual collecting the ticket(s). The information must exactly match a government-issued photo ID to be shown at collection.
+            </p>
+
+              <div class="error_message hidden" id="name_error">
+                *Please provide your name.
+              </div>
+            <div class="input contact">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required/>
+            </div>
+
+            <div class="input contact">
+              <label>Method</label>
+              <input type="radio" id="email_radio" name="contact" value="email" checked>
+              <label class="small" for="email_radio">Email</label>
+              <input type="radio" id="phone_radio" name="contact" value="phone">
+              <label class="small" for="phone_radio">Telephone</label>
+            </div>
+
+              <div class="error_message hidden" id="email_error">
+                *Please provide your email address.
+              </div>
+            <div class="input contact email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required/>
+            </div>
+
+              <div class="error_message hidden" id="phone_error">
+                *Please provide your phone number.
+              </div>
+            <div class="input contact phone hidden">
+              <label for="phone">Telephone</label>
+              <input type="tel" id="phone" name="phone"/>
+            </div>
+            <button id="submit">Reserve</button>
+          </form>
+        </section>
+        <section>
+          <h3>Schedule</h3>
+          <table>
+            <tr>
+              <th>Sunday</th>
+              <td>10:00 AM - 6:30 PM</td>
+            </tr>
+            <tr>
+              <th>Monday</th>
+              <td>10:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <th>Tuesday</th>
+              <td>10:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td>10:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td>10:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <th>Friday</th>
+              <td>10:00 AM - 6:30 PM</td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td>10:00 AM - 6:30 PM</td>
+            </tr>
+          </table>
+          <h3>Zoo Map</h3>
+          <figure>
+            <img src="images/map.png" alt="Map of the Ithaca Zoo"/>
+          </figure>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>Copyright 2018 Ithaca Zoo</p>
+  </footer>
+</body>
+</html>
